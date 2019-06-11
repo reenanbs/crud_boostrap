@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CrudBootstrap</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+
+    <div id="wrapper">
+      <%= render 'layouts/sidebar' %>
+
+      <div id="content-wrapper" class="d-flex flex-column">
+
+        <div id="content">
+          <%= render 'layouts/topbar' %>
+        </div>
+
+        <div class="container-fluid">
+          <%= yield %>
+        </div>
+
+        <%= render 'layouts/footer' %>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../../assets/javascripts/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/javascripts/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../../assets/javascripts/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="../../assets/javascripts/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../../assets/javascripts/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../../assets/javascripts/js/demo/chart-area-demo.js"></script>
+    <script src="../../assets/javascripts/js/demo/chart-pie-demo.js"></script>
+  </body>
+</html>
